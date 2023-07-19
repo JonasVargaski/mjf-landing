@@ -30,6 +30,7 @@ export function FooterSection() {
               <IconButton asChild>
                 <a
                   href="https://www.instagram.com/mjf.metalicas/"
+                  aria-label="Instagram"
                   target="_blank"
                 >
                   <Icons.Instagram />
@@ -38,6 +39,7 @@ export function FooterSection() {
               <IconButton asChild>
                 <a
                   href="https://www.facebook.com/profile.php?id=100072283255038"
+                  aria-label="Facebook"
                   target="_blank"
                 >
                   <Icons.Facebook />
@@ -46,6 +48,7 @@ export function FooterSection() {
               <IconButton asChild>
                 <a
                   href="https://wa.me/5548988126955?text=Olá! Gostaria de realizar um orçamento."
+                  aria-label="Whatsapp"
                   target="_blank"
                 >
                   <Icons.WhatsApp />
@@ -145,10 +148,10 @@ export function FooterSection() {
       </section>
       <footer className="w-full text-center bg-black h-[80px] grid place-items-center">
         <div className="container flex items-center justify-center">
-          <h6 className="text-white text-sm">
+          <p className="text-white text-sm">
             MJF Soluções Metálicas CNPJ: 45.853.432/0001-83 © Todos os direitos
             reservados
-          </h6>
+          </p>
         </div>
       </footer>
     </>

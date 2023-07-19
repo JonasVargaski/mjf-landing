@@ -62,6 +62,7 @@ export function Carousel({ className }: TCarouselProps) {
             'absolute invisible bg-black/50 py-1 rounded-md -left-2 z-10 top-1/2 -translate-y-1/2',
             initialized && 'visible',
           )}
+          aria-label="previous slide"
           onClick={handlePrev}
         >
           <ChevronLeft className="w-12 h-12" />
@@ -71,6 +72,7 @@ export function Carousel({ className }: TCarouselProps) {
             'absolute invisible bg-black/50 py-1 rounded-md -right-2 z-10 top-1/2 -translate-y-1/2',
             initialized && 'visible',
           )}
+          aria-label="next slide"
           onClick={handleNext}
         >
           <ChevronRight className="w-12 h-12" />
