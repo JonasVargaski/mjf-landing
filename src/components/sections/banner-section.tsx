@@ -9,7 +9,7 @@ export function BannerSection() {
   return (
     <main
       id="inicio"
-      className="container w-full items-center grid grid-cols-2 gap-16 py-20 text-white"
+      className="container w-full items-center grid grid-cols-2 gap-16 py-28 text-white"
     >
       <div className="flex flex-col gap-4">
         <h4 className="text-4xl font-medium">
