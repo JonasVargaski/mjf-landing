@@ -58,6 +58,9 @@ export default function ContactForm({ className, ...props }: ContactFormProps) {
       )}
       onSubmit={handleSubmit(onSubmit)}
     >
+      <p className="font-medium mb-1 -mt-3 text-xl">
+        Conte mais sobre o que você procura...
+      </p>
       <InputFormField
         control={control}
         name="name"
