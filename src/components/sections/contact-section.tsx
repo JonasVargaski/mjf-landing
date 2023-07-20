@@ -36,7 +36,7 @@ export function ContactSection() {
             asChild
           >
             <a
-              href="https://wa.me/5548988126955?text=Olá! Gostaria de realizar um orçamento."
+              href="https://wa.me/5548988126955?text=Olá, vim através do site e gostaria de solicitar um orçamento"
               target="_blank"
             >
               <Icons.WhatsApp className="w-6 h-6" />

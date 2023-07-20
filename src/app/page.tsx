@@ -31,7 +31,7 @@ export default function Home() {
       <div className="fixed bottom-6 right-4 z-50 text-white">
         <a
           className="inline-block group h-16 w-h-16 rounded-full shadow-lg bg-green-400 p-3"
-          href="https://wa.me/5548988126955?text=Olá! Gostaria de realizar um orçamento."
+          href="https://wa.me/5548988126955?text=Olá, vim através do site e gostaria de solicitar um orçamento"
           target="_blank"
           aria-label="Whatsapp"
         >

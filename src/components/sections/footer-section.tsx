@@ -47,7 +47,7 @@ export function FooterSection() {
               </IconButton>
               <IconButton asChild>
                 <a
-                  href="https://wa.me/5548988126955?text=Olá! Gostaria de realizar um orçamento."
+                  href="https://wa.me/5548988126955?text=Olá, vim através do site e gostaria de solicitar um orçamento"
                   aria-label="Whatsapp"
                   target="_blank"
                 >
@@ -56,7 +56,7 @@ export function FooterSection() {
               </IconButton>
             </div>
             <a
-              href="https://wa.me/5548988126955?text=Olá! Gostaria de saber sobre as oportunidades em aberto."
+              href="https://wa.me/5548988126955?text=Olá, vim através do site e gostaria de saber sobre as oportunidades em aberto."
               target="_blank"
               role="button"
             >
@@ -81,7 +81,7 @@ export function FooterSection() {
               title="WhatsApp"
               description={
                 <a
-                  href="https://wa.me/5548988126955?text=Olá! Gostaria de realizar um orçamento."
+                  href="https://wa.me/5548988126955?text=Olá, vim através do site e gostaria de solicitar um orçamento"
                   target="_blank"
                 >
                   (48) 98812-6955
