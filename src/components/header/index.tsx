@@ -21,13 +21,13 @@ export function Header() {
             </span>
           </div>
           <Popover>
-            <PopoverTrigger className="block md:hidden">
+            <PopoverTrigger>
               <button className="p-2 rounded-xl">
-                <Menu className="h-10 w-10" />
+                <Menu className="h-8 w-8 md:hidden" />
               </button>
             </PopoverTrigger>
-            <PopoverContent className="bg-[#000000e7] border-black text-white md:hidden">
-              <MainNav className="flex-col items-start justify-start gap-8 p-2 px-6 text-start" />
+            <PopoverContent className="bg-[#000000e7] border-black text-white">
+              <MainNav className="md:hidden flex-col items-start justify-start gap-8 p-2 px-6 text-start" />
             </PopoverContent>
           </Popover>
           <MainNav className="hidden md:flex" />

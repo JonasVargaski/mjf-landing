@@ -27,7 +27,7 @@ export function MainNav({
           key={nav.label}
           href={nav.path}
           className={cn(
-            'text-lg font-medium transition-transform hover:text-white/80 hover:font-semibold',
+            'text-lg font-medium transition-transform hover:text-white/70',
           )}
         >
           {nav.label}
