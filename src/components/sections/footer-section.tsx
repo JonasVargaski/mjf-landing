@@ -124,8 +124,9 @@ export function FooterSection() {
                     <br />
                     CEP 88870-000
                   </a>
+
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.79301528208873!2d-49.27712343558918!3d-28.37867248656653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1689623592482!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1516.6843141012173!2d-49.27764948217998!3d-28.378659644106364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95210df01dbd0f07%3A0x4c2cbd13dd3d1c8e!2zTUpGIFNvbHXDp8O1ZXMgTWV0w6FsaWNhcw!5e0!3m2!1spt-BR!2sbr!4v1689867137201!5m2!1spt-BR!2sbr"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}

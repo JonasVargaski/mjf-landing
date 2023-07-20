@@ -32,7 +32,7 @@ export function ContactSection() {
           <Button
             variant="success"
             size="lg"
-            className="mt-4 max-w-max"
+            className="mt-4 md:max-w-max"
             asChild
           >
             <a
