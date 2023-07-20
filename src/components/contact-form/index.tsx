@@ -74,6 +74,7 @@ export default function ContactForm({ className, ...props }: ContactFormProps) {
         control={control}
         mask={[{ mask: '(00) 0000-0000' }, { mask: '(00) 00000-0000' }]}
         name="phone"
+        type="tel"
         placeholder="Telefone"
       />
       <TextAreaFormField
