@@ -13,7 +13,7 @@ export function FooterSection() {
       >
         <div className="container pt-28 pb-12 gap-6 grid grid-cols-1 md:grid-cols-3 relative">
           <div className="flex flex-col gap-8 z-[1] items-center md:items-start">
-            <div className="flex flex-col gap-3 items-center md:items-start">
+            <div className="flex flex-col gap-3 items-center text-center md:items-start md:text-left">
               <div className="p-3 rounded-full h-[100px] w-[100px] grid place-items-center bg-white">
                 <Image
                   src="/only-logo.png"

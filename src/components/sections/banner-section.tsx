@@ -9,14 +9,14 @@ export function BannerSection() {
   return (
     <main
       id="inicio"
-      className="container w-full items-center grid grid-cols-2 gap-16 py-28 text-white"
+      className="container w-full items-center grid grid-cols-1 gap-8 py-10 md:py-28 md:grid-cols-2 md:gap-16 text-white"
     >
-      <div className="flex flex-col gap-4">
-        <h4 className="text-4xl font-medium">
+      <div className="flex flex-col gap-4 md:gap-12 text-center md:text-left">
+        <h4 className="text-2xl md:text-4xl font-medium">
           Vidraçaria, Esquadrias e decoração para sua casa ficar do jeito que
           sonhou
         </h4>
-        <p className="text-lg mt-4">
+        <p className="text-md md:text-lg">
           Vidraçaria, Esquadrias e decoração para sua casa ficar do jeito que
           sonhou Somos a solução para você que deseja mudar sua casa para um
           projeto dos sonhos, com nossos serviços de vidraçaria, esquadrias e

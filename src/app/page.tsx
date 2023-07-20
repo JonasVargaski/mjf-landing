@@ -11,8 +11,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col">
-      <div className="relative h-screen w-full">
+    <div className="relative flex flex-col">
+      <div className="relative min-h-screen w-full">
         <Image
           src="/bg-mjf.jpg.webp"
           alt="bg-banner"
