@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const services = [
   {
-    title: 'Vendas e manutenção de portas de rolo.',
+    title: 'Venda e manutenção de portas de rolo.',
     image:
       'https://www.aunidas.com.br/imagens/informacoes/portao-enrolar-garagem-02.jpg',
   },
@@ -21,11 +21,6 @@ const services = [
     image:
       'https://www.aunidas.com.br/imagens/informacoes/portao-enrolar-garagem-02.jpg',
   },
-  {
-    title: 'Móveis industriais',
-    image:
-      'https://www.aunidas.com.br/imagens/informacoes/portao-enrolar-garagem-02.jpg',
-  },
 ]
 
 export function ServicesSection() {
@@ -35,8 +30,8 @@ export function ServicesSection() {
         <div className="text-center">
           <h3 className="text-4xl mt-1 font-medium">Nossos serviços</h3>
           <p className="text-lg mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna
-            justo, ultrices et lacinia ac.
+            Abaixo apresentamos alguns dos principais serviços oferecidos pela
+            MJF soluções metálicas.
           </p>
         </div>
         <ol className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-around gap-16">
