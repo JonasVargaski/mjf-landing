@@ -1,4 +1,9 @@
-import { Carousel } from '../carousel'
+import dynamic from 'next/dynamic'
+
+const Carousel = dynamic(async () => {
+  const { Carousel: Component } = await import('@/components/carousel')
+  return { default: Component }
+})
 
 const images = Array.from({ length: 6 }).map(
   (_, i) => `https://swiperjs.com/demos/images/nature-${i + 1}.jpg`,

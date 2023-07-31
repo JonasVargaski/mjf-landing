@@ -21,10 +21,8 @@ export function Header() {
             </span>
           </div>
           <Popover>
-            <PopoverTrigger>
-              <button className="p-2 rounded-xl">
-                <Menu className="h-8 w-8 md:hidden" />
-              </button>
+            <PopoverTrigger aria-label="menu" className="p-2 rounded-xl">
+              <Menu className="h-8 w-8 md:hidden" />
             </PopoverTrigger>
             <PopoverContent className="bg-[#000000e7] border-black text-white">
               <MainNav className="md:hidden flex-col items-start justify-start gap-8 p-2 px-6 text-start" />

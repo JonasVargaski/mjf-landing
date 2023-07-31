@@ -4,7 +4,7 @@ export function AboutSection() {
   return (
     <section id="sobre" className="w-full bg-white">
       <div className="container flex flex-col gap-3 py-20">
-        <h3 className="text-4xl mt-1 font-medium">Sobre nós</h3>
+        <h4 className="text-4xl mt-1 font-medium">Sobre nós</h4>
         <div className="w-full gap-8 mt-2 grid grid-cols-1 md:grid-cols-6">
           <div className="md:col-span-4 text-gray-800 text-lg">
             <p>
