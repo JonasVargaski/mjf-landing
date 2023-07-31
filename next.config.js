@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.aunidas.com.br',
       },
+      {
+        protocol: 'https',
+        hostname: 'swiperjs.com',
+      },
     ],
   },
 }
