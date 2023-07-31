@@ -8,20 +8,21 @@ export function AboutSection() {
         <div className="w-full gap-8 mt-2 grid grid-cols-1 md:grid-cols-6">
           <div className="md:col-span-4 text-gray-800 text-lg">
             <p>
-              A MJF é uma empresa que atua no ramo do ferro, nas construções e
-              coberturas, há mais de 50 anos em Itajubá. Contudo, apesar do nome
-              MJF ser novo, já estamos no ramo desde a época em que o Sr. Eli
-              Gusmão expandiu o ramo na nossa região. A partir daí foi ele o
-              mestre que ensinou a arte da solda para diversos construtores em
-              ferro da nossa cidade.
+              Com mais de 15 anos de experiência, a nossa empresa tem se
+              destacado no mercado ao oferecer serviços de venda e manutenção de
+              portas automáticas, assim como o desenvolvimento de projetos
+              especiais. Especializados em uma variedade de sistemas, incluindo
+              portas basculantes, deslizantes, guilhotina, grades de proteção e
+              acabamentos em ACM, estamos comprometidos em fornecer soluções
+              personalizadas e de alta qualidade para as necessidades
+              específicas de cada cliente.
             </p>
             <p className="mt-3">
-              A MJF conta com uma equipe qualificada e estruturada, com pessoas
-              experientes e respaldada por engenheiro que auxilia nos projetos.
-              Nossa maior preocupação é trazer, pra você cliente amigo a
-              confiança de ter o melhor produto, com qualidade e dentro do prazo
-              estipulado. Lembrando que somos sempre gratos por você cliente,
-              para estarmos até hoje no mercado com essa credibilidade.
+              Nossa missão é proporcionar aos nossos clientes uma experiência
+              excepcional, desde o atendimento inicial até a conclusão de cada
+              projeto. Trabalhamos em estreita colaboração com os clientes,
+              compreendendo suas necessidades específicas e fornecendo soluções
+              que atendam a todas as suas expectativas.
             </p>
           </div>
           <div className="md:col-span-2 w-full h-64 relative overflow-hidden rounded-lg">

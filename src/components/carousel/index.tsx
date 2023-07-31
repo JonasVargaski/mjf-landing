@@ -10,17 +10,14 @@ import 'swiper/css/pagination'
 import { cn } from '@/lib/utils'
 import { useCallback, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-
-const images = Array.from({ length: 6 }).map(
-  (_, i) => `https://swiperjs.com/demos/images/nature-${i + 1}.jpg`,
-)
+import Image from 'next/image'
 
 type TCarouselProps = {
   className?: string
-  images?: string[]
+  images: string[]
 }
 
-export function Carousel({ className }: TCarouselProps) {
+export function Carousel({ className, images }: TCarouselProps) {
   const sliderRef = useRef<SwiperRef>(null)
   const [initialized, setInitialized] = useState(false)
 
@@ -39,27 +36,30 @@ export function Carousel({ className }: TCarouselProps) {
         loop
         virtual
         autoplay={{
-          delay: 5000,
+          delay: 13000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
         pagination={{ clickable: true }}
         modules={[Pagination, Virtual, Autoplay]}
         onBeforeInit={() => setInitialized(true)}
-        className={cn('w-full h-96 rounded-lg shadow-lg relative', className)}
+        className={cn(
+          'w-full h-96 rounded-lg shadow-lg relative group',
+          className,
+        )}
       >
         {images.map((url) => (
           <SwiperSlide
             key={url}
-            className="!flex !items-center !justify-center text-md text-center"
+            className="!flex !items-center !justify-center text-md text-center relative"
           >
-            <img src={url} loading="lazy" alt="carolsel item" />
+            <Image src={url} loading="lazy" alt="carolsel item" fill />
             <div className="swiper-lazy-preloader swiper-lazy-preloader-white" />
           </SwiperSlide>
         ))}
         <button
           className={cn(
-            'absolute invisible bg-black/50 py-1 rounded-md -left-2 z-10 top-1/2 -translate-y-1/2',
+            'absolute opacity-0 transition-all invisible text-white bg-black/50 py-1 rounded-md -left-2 z-10 top-1/2 -translate-y-1/2 group-hover:opacity-100',
             initialized && 'visible',
           )}
           aria-label="previous slide"
@@ -69,7 +69,7 @@ export function Carousel({ className }: TCarouselProps) {
         </button>
         <button
           className={cn(
-            'absolute invisible bg-black/50 py-1 rounded-md -right-2 z-10 top-1/2 -translate-y-1/2',
+            'absolute opacity-0 transition-all invisible text-white bg-black/50 py-1 rounded-md -right-2 z-10 top-1/2 -translate-y-1/2 group-hover:opacity-100',
             initialized && 'visible',
           )}
           aria-label="next slide"

@@ -104,7 +104,12 @@ export function FooterSection() {
             <ContactScaffold
               icon={<Clock />}
               title="Horário de atendimento"
-              description={'  Segunda a sexta: 07:00hs às 17:00hs'}
+              description={
+                <>
+                  Segunda a sexta: 08:00h às 12:00h <br />
+                  13:30h às 17:00h
+                </>
+              }
             />
           </div>
 
