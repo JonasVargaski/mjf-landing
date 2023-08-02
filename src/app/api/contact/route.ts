@@ -2,9 +2,8 @@ import { NextResponse } from 'next/server'
 import { z } from '@/lib/zod'
 
 import { mail } from '@/lib/nodemailer'
-import { env } from '@/lib/env'
 
-export const schema = z.object({
+const schema = z.object({
   name: z.string().trim().min(4, 'Informe seu nome completo'),
   email: z
     .string()
