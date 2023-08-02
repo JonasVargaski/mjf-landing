@@ -4,7 +4,8 @@ const envSchema = z.object({
   NODE_ENV: z
     .enum(['development', 'test', 'production'])
     .default('development'),
-  MAILCHIMP_API_KEY: z.string().nonempty(),
+  NODEMAILER_USER: z.string().nonempty(),
+  NODEMAILER_PASSWORD: z.string().nonempty(),
 })
 
 const _env = envSchema.safeParse(process.env)
