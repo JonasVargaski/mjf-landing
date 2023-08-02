@@ -5,10 +5,6 @@ const Carousel = dynamic(async () => {
   return { default: Component }
 })
 
-const images = Array.from({ length: 6 }).map(
-  (_, i) => `https://swiperjs.com/demos/images/nature-${i + 1}.jpg`,
-)
-
 const services = [
   {
     title: 'Venda e manutenção de portas de rolo.',
