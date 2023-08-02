@@ -10,10 +10,45 @@ const images = Array.from({ length: 6 }).map(
 )
 
 const services = [
-  { title: 'Venda e manutenção de portas de rolo.', images },
-  { title: 'Portões basculantes, deslizantes e guilhotina', images },
-  { title: 'Projetos especiais', images },
-  { title: 'ACM', images },
+  {
+    title: 'Venda e manutenção de portas de rolo.',
+    images: [
+      '/servicos/portao-1.jpeg',
+      '/servicos/portao-4.jpeg',
+      '/servicos/portao-5.jpeg',
+      '/servicos/portao-6.jpeg',
+      '/servicos/portao-7.jpeg',
+    ],
+  },
+  {
+    title: 'Portões basculantes, deslizantes e guilhotina',
+    images: ['/servicos/portao-2.jpeg', '/servicos/portao-3.jpeg'],
+  },
+  {
+    title: 'Projetos especiais',
+    images: [
+      '/servicos/especial-0.jpeg',
+      '/servicos/especial-1.jpeg',
+      '/servicos/especial-2.jpeg',
+      '/servicos/especial-3.jpeg',
+      '/servicos/especial-4.jpeg',
+      '/servicos/especial-5.jpeg',
+      '/servicos/especial-6.jpeg',
+      '/servicos/especial-7.jpeg',
+      '/servicos/especial-8.jpeg',
+      '/servicos/especial-9.jpeg',
+      '/servicos/especial-10.jpeg',
+      '/servicos/especial-11.jpeg',
+    ],
+  },
+  {
+    title: 'ACM',
+    images: [
+      '/servicos/acm-0.jpeg',
+      '/servicos/acm-1.jpeg',
+      '/servicos/porta-1.jpeg',
+    ],
+  },
 ]
 
 export function ServicesSection() {
