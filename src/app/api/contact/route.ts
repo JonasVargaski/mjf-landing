@@ -22,27 +22,93 @@ export async function POST(req: Request) {
       to: 'mjfsolucoesmetalicas@gmail.com',
       subject: 'NOVO PEDIDO DE ORÇAMENTO SITE',
       html: `
-     <div style="padding:20px; border-radius: 6px; border: 1px solid #ccc;">
-      <h3>Novo pedido de orçamento</h3>
-      <div style="display: flex; flex-direction: column; gap:12px">
-        <div>
-          <b>Nome:</b>
-          ${name}
+      <!DOCTYPE html>
+      <html>
+
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email de Contato</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+          }
+
+          .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+
+          .header {
+            text-align: center;
+            background-color: #444444;
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+
+          .contact-info {
+            margin-bottom: 20px;
+          }
+
+          .label {
+            font-weight: bold;
+          }
+
+          .message {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            min-height: 100px;
+            white-space: pre-wrap;
+          }
+
+          .footer {
+            text-align: center;
+            background-color: #f1f1f1;
+            color: #777;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-top: 20px;
+          }
+        </style>
+      </head>
+
+      <body>
+        <div class="email-container">
+          <div class="header">
+            <h2>Novo Contato pelo site</h2>
+          </div>
+          <div class="contact-info">
+            <p class="label">Nome:</p>
+            <p>${name}</p>
+            <p class="label">E-mail:</p>
+            <p>${email}</p>
+            <p class="label">Telefone:</p>
+            <p>${phone.replace(/^(\d{2})(\d{4,5})(\d{4})$/, '($1) $2-$3')}</p>
+          </div>
+          <div class="message">
+            <p class="label">Mensagem:</p>
+            <p>${message}</p>
+          </div>
+          <div class="footer">
+            <p>Este é um e-mail recebido do formulário de contato do site.</p>
+          </div>
         </div>
-        <div>
-          <b>E-mail:</b>
-          ${email}
-        </div>
-        <div>
-          <b>Telefone:</b>
-          ${phone}
-        </div>
-        <div>
-          <b>Mensagem:</b>
-          <p style="white-space: pre-wrap;">${message}</p>
-        </div>
-      </div>
-    </div>
+      </body>
+      </html>
       `,
     })
     return NextResponse.json(null, { status: 200 })
