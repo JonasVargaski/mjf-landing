@@ -6,7 +6,6 @@ import { FaqSection } from '@/components/sections/faq-section'
 import { FooterSection } from '@/components/sections/footer-section'
 
 import { ServicesSection } from '@/components/sections/services-section'
-import { Icons } from '@/components/ui/icons'
 import Image from 'next/image'
 
 export default function Home() {
