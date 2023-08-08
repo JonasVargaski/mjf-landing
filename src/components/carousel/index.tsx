@@ -58,7 +58,7 @@ export function Carousel({ className, images }: TCarouselProps) {
               key={url}
               className="!flex !items-center !justify-center text-md text-center relative"
             >
-              <Image src={url} loading="lazy" alt="carolsel item" fill />
+              <Image src={url} alt="carolsel item" fill />
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white" />
             </SwiperSlide>
           ))}
