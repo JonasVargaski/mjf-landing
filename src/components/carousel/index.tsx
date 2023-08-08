@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react'
-import { Pagination, Virtual, Autoplay } from 'swiper/modules'
+import { Pagination, Autoplay } from 'swiper/modules'
 
 import './styles.css'
 import 'swiper/css'
@@ -40,14 +40,13 @@ export function Carousel({ className, images }: TCarouselProps) {
         <Swiper
           ref={sliderRef}
           loop
-          virtual
           autoplay={{
             delay: 13000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
           pagination={{ clickable: true }}
-          modules={[Pagination, Virtual, Autoplay]}
+          modules={[Pagination, Autoplay]}
           onBeforeInit={() => setInitialized(true)}
           className={cn(
             'w-full h-96 rounded-lg shadow-lg relative group',
