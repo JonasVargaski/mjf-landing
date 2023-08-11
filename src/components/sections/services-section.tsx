@@ -7,7 +7,7 @@ const Carousel = dynamic(async () => {
 
 const services = [
   {
-    title: 'Venda e manutenção de portas de rolo.',
+    title: 'Portas de rolo',
     images: [
       '/servicos/portao-1.jpeg',
       '/servicos/portao-4.jpeg',
@@ -17,8 +17,22 @@ const services = [
     ],
   },
   {
+    title: 'Portas seccionadas',
+    images: [
+      '/servicos/seccionada-1.jpeg',
+      '/servicos/seccionada-2.jpeg',
+      '/servicos/seccionada-3.jpeg',
+      '/servicos/seccionada-4.jpeg',
+      '/servicos/seccionada-5.jpeg',
+    ],
+  },
+  {
     title: 'Portões basculantes, deslizantes e guilhotina',
-    images: ['/servicos/portao-2.jpeg', '/servicos/portao-3.jpeg'],
+    images: [
+      '/servicos/portao-2.jpeg',
+      '/servicos/portao-correr-1.webp',
+      '/servicos/portao-3.jpeg',
+    ],
   },
   {
     title: 'Projetos especiais',

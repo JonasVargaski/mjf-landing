@@ -51,6 +51,11 @@ const faqs: TFaq[] = [
     ),
   },
   {
+    title: 'O que é uma Porta Seccionada? ',
+    description:
+      'As portas seccionadas são portas fabricadas em painéis de chapa de aço com acabamento galvanizado e preenchido com PU injetado que, além de suportar temperaturas extremas, é ecologicamente correta. São muito utilizadas em garagens residenciais e indústrias.',
+  },
+  {
     title: 'Quais serviços a empresa oferece?',
     description:
       'Nossa empresa oferece uma ampla gama de serviços como venda e manutenção de portas de rolo automática; portões basculante, deslizante e guilhotina; grades de proteção; projetos especiais; projetos com acabamento em ACM.',
