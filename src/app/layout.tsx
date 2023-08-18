@@ -8,7 +8,35 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'MJF Soluções Metálicas',
-  description: 'Projetos sob medida e montagens de portas e portões',
+  description:
+    'Projetos sob medida, montagens de portas e portões basculante, rolo e deslizante. Toda linha de estruturas metálicas.',
+  keywords: [
+    'mjf',
+    'mjf metalicas',
+    'mjf solucoes metalicas',
+    'orleans',
+    'serralheiria orleans',
+    'portas de enrrolar',
+    'portao orleans',
+    'estruturas metálicas',
+    'metálicas orleans',
+    'projetos especiais',
+    'porta de enrrolar',
+    'portao de enrrolar',
+    'portao de rolo',
+    'portao elétrico',
+    'moveis industriais',
+  ],
+  authors: {
+    name: 'Jonas Vargaski',
+    url: 'www.github.com/jonasvargaski',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    noarchive: true,
+    noimageindex: true,
+  },
 }
 
 export default function RootLayout({
