@@ -59,6 +59,16 @@ const services = [
       '/servicos/porta-1.jpeg',
     ],
   },
+  {
+    title: 'Revestimentos especiais',
+    images: [
+      '/servicos/revestimento-1.jpeg',
+      '/servicos/revestimento-2.jpeg',
+      '/servicos/revestimento-3.jpeg',
+      '/servicos/revestimento-4.jpeg',
+      '/servicos/revestimento-5.jpeg',
+    ],
+  },
 ]
 
 export function ServicesSection() {
