@@ -12,6 +12,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import { Fancybox } from '../fancybox'
+import { Skeleton } from '@/components/ui/skeleton'
 
 type TCarouselProps = {
   className?: string
@@ -37,7 +38,8 @@ export function Carousel({ className, images }: TCarouselProps) {
 
   return (
     <Fancybox options={{ Carousel: { infinite: false } }}>
-      <div className="relative min-h-[384px]">
+      <div className="relative h-96">
+        {!domLoaded && <Skeleton className="w-full h-full rounded-lg" />}
         {domLoaded && (
           <Swiper
             ref={sliderRef}
@@ -64,10 +66,11 @@ export function Carousel({ className, images }: TCarouselProps) {
                   src={url}
                   alt="carolsel item"
                   data-fancybox="gallery"
-                  className="cursor-zoom-in"
+                  className="cursor-zoom-in object-cover"
                   quality={100}
                   priority
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white" />
               </SwiperSlide>

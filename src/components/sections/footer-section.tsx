@@ -123,7 +123,7 @@ export function FooterSection() {
                     href="https://goo.gl/maps/swUSBf7F9JSMTDP8A"
                     target="_blank"
                   >
-                    R. Juliana Hilbert Cascaes - Corridas
+                    Rua João Batista Barzan, 30
                     <br />
                     Orleans - SC
                     <br />

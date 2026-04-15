@@ -27,8 +27,8 @@ export function AboutSection() {
           </div>
           <div className="md:col-span-2 w-full h-64 relative overflow-hidden rounded-lg">
             <Image
-              src="/fachada.jpg"
-              alt="fachada"
+              src="/mjf galpao.png"
+              alt="galpao"
               className="object-cover"
               fill
             />
